@@ -1,0 +1,30 @@
+{
+  "name": "loa-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lines of Action engine: rules, evaluation, alpha-beta(PVS)+TT, and MCTS(PUCT) with optional ONNX policy/value.",
+  "main": "dist/cli.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/cli.ts",
+    "play": "node dist/cli.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "onnxruntime-node": "^1.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "eslint-config-prettier": "10.1.8"
+  }
+}
